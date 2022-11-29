@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewort" content="width=device-width, initial-scale=1.0">
+	<title>SANBERTO</title>
+	<link rel="stylesheet" type="text/css" href="css/estilonav.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/script.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<!--Importando Script Jquery-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<nav>
+
+			<a class="logo"href="index.html"><img src="imagens/logo3.png"></a>
+			
+			<a href="login.html">
+			<div class="boxLogin"> 
+			<img class="login" src="imagens/login3.png">
+			<h2>Login</h2>
+			</div></a>
+			
+			<div class="menu" id="menu"> <!-- barra do hamburguer -->
+				<div class="menu-bar" id="menu-bar" onclick="menuOnClick()">
+					<img class="fecharMenu" id="fecharMenu" src="imagens/fecharMenu.png" onclick="fecharMenuu('fecharMenu')" >
+					<img class="menuIcone" id="menuIcone" src="imagens/menuIcone.png" onclick="abrirMenuu('menuIcone')">
+				</div>
+				<div class="lista2" id="lista2"> <!-- Lista do menu oculto-->
+					<ul >
+						<li><a href="consultamedica.html">Consultas médicas</a></li>
+						<li><a href="marcacaoexame.html">Marcação de exame</a></li>
+						<li><a href="exameimagem.html">Exames de imagem</a></li>
+						<li><a href="exameslab.html">Exames laboratorias</a></li>
+						<li><a href="resexame.html">Resultado de exames</a></li>
+						<li><a href="covid.html">Teste de coronavírus | covid-19</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</nav>
+
+	<div class="geralIndex">
+
+	<main>
+	</main>
+		<div class="content" id="content"> <!-- Começando o Slide-->
+
+			<div class="slides" id="slides">
+				<input type="radio" name="radio" id="radio1" checked>
+				<input type="radio" name="radio" id="radio2">
+			
+
+				<div class="slide1"> <!-- primeira noticia-->
+					<h1 class="a1" id="a1">Saiba mais sobre Coronavírus | COVID-19</h1>
+					<a href="https://www.who.int/health-topics/coronavirus#tab=tab_3" target="_blank"><img class="img" src="imagens/1.jpg" alt="exemplo1"></a>
+					
+				</div>
+				<div class="slide"> <!-- segunda noticia-->
+					<h1 class="a2" id="a2">Sobre a San'Berto</h1>
+					<a href="empresa.html" target="_blank"><img class="img" src="imagens/2.jpg" alt="exemplo2"></a>
+					
+				</div>
+				
+			</div>
+
+			<div class="navegacao" id="navegacao"> <!-- Div de navegação do slider-->
+			<label class="sld" for="radio1" onclick="onClickSlide('a1')"></label>
+			<label class="sld" for="radio2" onclick="onClickSlide2('a2')"></label>
+		
+			</div>
+
+		</div>
+
+
+		<h2 class="t3">Especialidades mais procuradas</h2>
+		<center>
+		<div class="esp" id="esp">
+			 <a href="cirurgia.html"><section id="cirurgia" class="opc" > <img class="cir" src="imagens/ciru.png"> Cirurgia</section></a>
+			<a href="oncologia.html"><section id="oncologia" class="opc"> <img class="onc" src="imagens/onco.png"> Oncologia</section></a>
+			<a href="ortopedia.html"><section id="ortopedia" class="opc"> <img class="ort" src="imagens/orto.png">  Ortopedia</section></a>
+			<a href="urologia.html"><section id="urologia" class="opc"> <img class="uro" src="imagens/uro.png"> Urologia</section></a>
+			<hr class="clear">
+		</div>
+		</center>
+
+</div>
+
+
+
+	<div id="menu-bg" class="menu-bg"></div>
+
+	<footer class="rodapeIndex">
+		<div class="logoRodapeIndex">
+			<img src="imagens/logo3.png">
+		</div>
+		<div class="contatoIndex">
+			<center><h2>Contato</h2></center><br>
+			<p><strong>E-mail:</strong> clinicasanberto@sanberto.com.br</p><br>
+			<p><strong>Telefone: </strong>(21) 2651-9878 / (21) 3652-9968</p>
+		</div>
+		<div class="enderecoIndex">
+			<center><h2>Endereço</h2></center><br>
+			<center><p>Rua Zoãsnskeberg Jorge Nilton, 22</p></center><br>
+			<p>Cep: 25857-580 / São João de Meriti</p>
+		</div>
+		<div class="redeSocialIndex">
+			<center><h2>Siga-nos</h2></center><br>
+			<a href="https://www.instagram.com/sanberto28/" target="_blank"> <img class="socialIndex" src="imagens/instagram.png"></a>
+			<img class="socialIndex" src="imagens/facebook.png">
+			<a href="https://api.whatsapp.com/send/?phone=552126519878&text=Gostaria+de+saber+mais+sobre+a+cl%C3%ADnica+San%27Berto.&app_absent=0" target="_blank"><img class="socialIndex" src="imagens/whatsapp.png"></a>
+		</div>
+	</footer>
+</body>
+</html>

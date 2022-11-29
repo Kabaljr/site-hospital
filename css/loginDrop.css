@@ -1,0 +1,21 @@
+#menuDrop{
+	float: ri
+	border: solid 10px;
+	width: 400px;
+	height: 480px;
+	border-radius: 10%;
+	background: green;
+	color: black;
+}
+.loginDrop{
+	border:solid;
+	position: relative;
+	top: 30px;
+	width: 380px;
+
+
+
+}
+.clear{
+	clear: both;
+}

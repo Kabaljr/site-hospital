@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script src="https://kit.fontawesome.com/e7029cc877.js" crossorigin="anonymous"></script>
+	<title></title>
+</head>
+<body>
+
+
+<a class="logo" id="logo" href="index.html"><img class="logoImg" src="imagens/logo3.png"></a>
+	<div class="container">  <!--Container Geral-->
+
+		<div class="forms-container">  <!--container do formulario-->
+			<div class="signin-signup">  <!-- div de login e cadastro-->
+				<form action="" class="sign-in-form" method="post">  <!-- formulario de login-->
+					<h2 class="title">Login</h2>  <!-- titulo principal de login-->
+					<div class="input-field"> <!--Div campo de entrada nome-->
+						<i class="fas fa-envelope"></i>  <!--econe de login-->
+						<input type="email" name="" placeholder="E-mail">  <!-- Entrada de texto usuario-->
+					</div>
+					<div class="input-field">  <!--Div Campo de entrada senha-->
+						<i class="fas fa-lock"></i>  <!-- icone de cadiado-->
+						<input type="password" name="" placeholder="Senha">  <!-- entrada de senha-->
+					</div> <!--Fim Div Campo de entrada senha-->
+					<input type="submit" value="Login" class="btn solid"> <!--Botão de login-->
+
+					<p class="social-text">Ou entre com suas redes sociais</p> <!---->
+					<div class="social-media"> <!-- Div redes sociais, icone e ancoras-->
+						<a href="#" class="social-icon"> 
+							<i class="fab fa-facebook-f"></i> <!--Icone do facebook-->
+						</a>
+						<a href="#" class="social-icon"> 
+							<i class="fab fa-twitter"></i> <!--Icone do twitter-->
+						</a>
+						<a href="#" class="social-icon"> 
+							<i class="fab fa-google-plus-g"></i> <!--Icone do Google +-->
+						</a>
+						<a href="#" class="social-icon"> 
+							<i class="fab fa-linkedin-in"></i> <!--Icone do Linkedin -->
+						</a>
+					</div> <!-- Fim Div redes sociais, icone e ancoras-->
+				</form>  <!-- Fim formulario de login-->
+
+
+
+				<form action="cadastro.html" class="sign-up-form" method="post" onsubmit="return validar(this)">  <!-- formulario de login-->
+					<h2 class="title">Cadastro</h2>  <!-- titulo principal de login-->
+				
+					<div class="input-field"> <!--Div campo de entrada nome-->
+						<i class="fas fa-envelope"></i>  <!--econe de login-->
+						<input type="email" name="email" placeholder="Email">  <!-- Entrada de texto usuario-->
+					</div>
+					
+					<input type="submit" value="Cadastrar &raquo;" class="btn solid"> <!--Botão de login-->
+
+					<p class="social-text">Ou se cadastre com suas redes sociais</p> <!---->
+					<div class="social-media"> <!-- Div redes sociais, icone e ancoras-->
+						<a href="#" class="social-icon"> 
+							<i class="fab fa-facebook-f"></i> <!--Icone do facebook-->
+						</a>
+						<a href="#" class="social-icon"> 
+							<i class="fab fa-twitter"></i> <!--Icone do twitter-->
+						</a>
+						<a href="#" class="social-icon"> 
+							<i class="fab fa-google-plus-g"></i> <!--Icone do Google +-->
+						</a>
+						<a href="#" class="social-icon"> 
+							<i class="fab fa-linkedin-in"></i> <!--Icone do Linkedin -->
+						</a>
+					</div> <!-- Fim Div redes sociais, icone e ancoras-->
+				</form>  <!-- Fim formulario de login-->
+
+
+
+			</div> <!-- Fim div de login e cadastro-->
+		</div> <!-- Fim container do formulario-->
+
+		<div class="panels-container"> <!-- Painel de container-->
+			<div class="panel left-panel">	<!-- painel esquerdo, cadastro-->
+				<div class="content">	<!---->
+					<h3>Não tem Cadastro ?</h3>	<!-- titulo do cadastro-->
+					<p>Venha conhecer os melhores mêdicos do Brasil, e com os mehores preços.</p>
+					<button class="btn transparent" id="sign-up-btn" onclick="logo()">Cadastrar</button> <!--Botão pra entrar e se cadastrar-->
+				</div>
+				<img src="imagens/cadastro.svg" class="image"> <!--Imagem de cadastro-->
+			</div> <!-- Fim painel esquerdo, cadastro-->
+
+			<div class="panel right-panel">	<!-- painel esquerdo, cadastro-->
+				<div class="content">	<!---->
+					<h3>Ja possui Cadastro ?</h3>	<!-- titulo do cadastro-->
+					<p>Se ja possui Cadastro, entre pra fazer o login</p>
+					<button class="btn transparent" id="sign-in-btn" onclick="logoLogin()">Login</button> <!--Botão pra entrar e se cadastrar-->
+				</div>
+				<img src="imagens/login.svg" class="image"> <!--Imagem de cadastro-->
+			</div> <!-- Fim painel esquerdo, cadastro-->
+
+		</div> <!-- Fim Painel de container-->
+
+
+	</div> <!--Fim Container Geral-->
+
+
+	<script src="js/login.js"></script>
+</body>
+</html>

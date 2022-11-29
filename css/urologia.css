@@ -1,0 +1,32 @@
+.oquro{
+	color: black;
+	font-family: arial;
+	position: relative;
+	top: 20px;
+	width: 859px;
+	height: 1009px;
+	
+
+}
+p{
+	color: black;
+	opacity: 1;
+}
+.bgUrologia{
+	background: linear-gradient(180deg, #efefef 09%, #9acade 94%);
+	position: relative;
+	top: 20px;
+	opacity: 0.6;
+	width: 100%;
+
+}
+.imgUrologia{
+	position: relative;
+	opacity: 0.6;
+}
+.logo{
+	z-index: 4;
+}
+main{
+	opacity: 0.1;
+}

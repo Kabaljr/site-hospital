@@ -1,0 +1,39 @@
+.empresa{
+	color: black;
+	font-family: arial;
+	position: relative;
+	top: 20px;
+	width: 859px;
+	height: 750px;
+
+
+}
+p{
+	color: black;	
+	opacity: 1;
+}	
+.bgempresa{
+	background: linear-gradient(25deg, #efefef 53%, #9acade 94%);
+
+	position: relative;
+	top: 20px;
+	
+	width: 100%;
+
+}
+.imgempresa{
+	position: relative;
+
+	opacity: 0.6;
+}
+.logo{
+	z-index: 4;
+}
+main{
+	opacity: 0.1;
+	z-index: 6;
+}
+.menuIcone{
+	height: 50px;
+	width: 50px;
+}

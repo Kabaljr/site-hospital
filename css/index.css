@@ -1,0 +1,226 @@
+
+.geralIndex{
+
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	padding-bottom: 900px;
+	
+}
+.content{ /*box dos slides*/
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	height: 464px;
+	width: 1195px;
+	border-radius: 10px;
+	overflow: hidden; /* corrigir o bug das imagens ultrapassando as bordas da div*/ 
+	transform: translate(-50%, 10%);/* envolver o elemento no proprio eixo*/
+
+}
+.navegacao{ /*Radios de navegacao*/
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+}
+.sld{
+	cursor: pointer;
+	border: 2px solid #fff;
+	width: 70px;
+	height: 17px;
+	margin: 6px;
+	border-radius: 5px;
+	
+
+}
+.sld:hover{
+	background: #fff;
+
+
+	
+}
+
+input{
+	display: none;
+}
+.slides a{
+	opacity: 0.8;
+}
+.slides{ /*Cada imagem ira aparecer a cada 100%*/
+	display: flex;
+	width: 200%;
+	height: 100%
+
+}
+/* cada imagem vale 25% da largura*/
+.slide{
+	width: 50%;
+}
+/* colocando a imagem 100% na div*/
+.slides img{
+	width: 100%;
+	height: 100%;
+}
+
+/* cada vez que o radio for checado troca a imagem atraves da margem*/
+#radio1:checked ~ .slide1{
+	margin-left: 0;
+	transition: 0.6s ease;
+}
+#radio2:checked ~ .slide1{
+	margin-left: -50%;
+	transition: 0.6s ease;
+}
+
+
+
+
+.a1{
+	position: absolute;
+	z-index: 1;
+	color: #fff;
+	width: px;
+	height: 30px;
+	width: 1190px;
+	left: 27%;
+	top: 370px;
+
+
+	
+}
+.a2{
+	position: absolute;
+	z-index: 2;
+	color: #fff;
+	width: px;
+	height: 30px;
+	width: 1190px;
+	left: 40%;
+	top: 370px;
+	display: none;
+
+}
+
+.t3{
+	position: absolute;
+	left: 250px;
+	top: 670px;
+	color: #37599d;
+	font-weight: bolder;
+}
+
+.esp a{
+	color: #37599d;
+
+}
+
+.esp{
+	position: relative;
+	width: 900px;
+	top: 720px;
+}
+.opc{
+	width: 400px;
+	height: 70px;
+	z-index: 4;
+	background: #fff;
+	border: 2px solid;
+	font: 28px arial;
+	color: #37599d;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 30px;
+	border-radius: 15px;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	margin: 20px;
+}
+.opc:hover{
+	transition: 0.4s ease;
+	transform: scale(1.1);
+	background: #d3d5d8;
+}
+
+.cir{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 30px;
+
+}
+.ort{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 30px;
+
+}
+
+.onc{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 30px;
+
+}
+.uro{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 30px;
+}
+.clear{
+	clear: both;
+}
+hr{
+	visibility: hidden;
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+}
+
+.rodapeIndex{
+	background: linear-gradient(250deg, #2d67a9 53%, #9acade 100%);
+	width: 100%;
+	height: 150px;
+	color: #fff;
+	font-weight: bolder;
+	position: relative;
+	bottom: 0;
+}
+
+.logoRodapeIndex{
+	position: relative;
+
+}
+.logoRodapeIndex img{
+	width: 70%;
+	height: 70%;
+
+}
+.contatoIndex{
+	position: relative;
+
+}
+
+.enderecoIndex{
+	position: relative;
+
+}
+.redeSocialIndex{
+	position: relative;
+
+
+}
+.socialIndex{
+	width: 50px;
+	width: 50px;
+	padding: 10px;
+}

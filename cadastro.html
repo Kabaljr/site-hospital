@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewort" content="width=device-width,initial-scale=1">
+	<title>SANBERTO</title>
+	<link rel="stylesheet" type="text/css" href="css/estilonav.css">
+	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+	<script src="https://kit.fontawesome.com/e7029cc877.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<!--Importando Script Jquery-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+			<a class="logo"href="index.html"><img src="imagens/logo3.png"></a>
+			
+			<a href="login.html">
+			<div class="boxLogin"> 
+			<img class="login" src="imagens/login3.png">
+			<h2>Login</h2>
+			</div></a>
+			
+			<div class="menu" id="menu">
+				<div class="menu-bar" id="menu-bar" onclick="menuOnClick()">
+					<img class="fecharMenu" id="fecharMenu" src="imagens/fecharMenu.png" onclick="fecharMenuu('fecharMenu')" >
+					<img class="menuIcone" id="menuIcone" src="imagens/menuIcone.png" onclick="abrirMenuu('menuIcone')">
+				</div>
+				<div class="lista2" id="lista2">
+					<ul >
+						<li><a href="consultamedica.html">Consultas médicas</a></li>
+						<li><a href="marcacaoexame.html">Marcação de exame</a></li>
+						<li><a href="exameimagem.html">Exames de imagem</a></li>
+						<li><a href="exameslab.html">Exames laboratorias</a></li>
+						<li><a href="resexame.html">Resultado de exames</a></li>
+						<li><a href="covid.html">Teste de coronavírus | covid-19</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</nav>
+	</header>
+	
+
+		<div class="cadastro-corpo">
+
+				<form action="login.html" method="post">
+					<h1 class="title">Cadastro</h1>
+					<div class="div-form">
+						<i class="fas fa-envelope"></i>
+						<input type="email" name="email" disabled="">
+					</div>
+				</form>
+				<form class="form2">
+						<div class="div-form">
+						<i class="fas fa-user"></i>
+						<input type="text" name="nome" placeholder="Digite o nome Completo">
+					</div>
+					<div class="div-form">
+						<i class="fas fa-id-card"></i>
+						<input type="text" oninput="mascara(this, 'cpf')" name="cpf" placeholder="Digite o CPF ##.###.###-##">
+					</div>
+
+					<div class="div-form">
+						<i class="fas fa-mobile-alt"></i>
+						<input id="telefone" oninput="mascara(this, 'tel')" type="text" name="telefone" placeholder="Digite o Celular ## #####-####">
+					</div>
+
+
+						<label>Sexo:</label>
+						<div class="radio">
+						<label>Masculino</label>
+						<input class="radio" type="radio" name="sexo" checked>
+						<label>Feminino</label>
+						<input class="radio" type="radio" name="sexo" checked>
+						<label>Outro</label>
+						<input class="radio" type="radio" name="sexo" checked>
+						</div>
+
+						<div class="data2">
+						<label>Data de Nascimento:</label>
+						<input class="data" type="date" name="data">
+						</div>
+
+
+					<div class="div-form">
+						<i class="fas fa-sort-numeric-up"></i>
+						<input id="cep" oninput="mascara(this, 'cep')" type="text" name="cep" placeholder="Digite o Cep ##.###-###">
+					</div>
+					<div class="div-form">
+						<i class="fas fa-road"></i>
+						<input id="logradouro" type="text" name="logradouro" placeholder="Digite o Logradouro">
+					</div>
+
+					<div class="num-comp">
+					<div class="div-form2">
+						<i class="fas fa-sort-numeric-down"></i>
+						<input  id="numero" type="text" name="numero" placeholder="número da casa">
+					</div>
+					<div class="div-form2">
+						<i class="fas fa-warehouse"></i>
+						<input  id="complemento" type="text" name="complemento" placeholder="complemento">
+					</div>
+					</div>
+
+					<div class="div-form">
+						<i class="far fa-building"></i>
+						<input id="bairro" type="text" name="bairro" placeholder="Digite o Bairro">
+					</div>
+
+					<div class="div-form">
+						<i class="fas fa-city"></i>
+						<input id="cidade" type="text" name="cidade" placeholder="Digite a Cidade">
+					</div>	
+					
+					
+					
+					
+				</form>
+				<form action="login.html" method="post">
+						<label for="uf">Selecione o Estado: </label>
+							<select id="uf" name="estados-brasil">
+								<option value="AC">Acre</option>
+								<option value="AL">Alagoas</option>
+								<option value="AP">Amapá</option>
+								<option value="AM">Amazonas</option>
+								<option value="BA">Bahia</option>
+								<option value="CE">Ceará</option>
+								<option value="DF">Distrito Federal</option>
+								<option value="ES">Espírito Santo</option>
+								<option value="GO">Goiás</option>
+								<option value="MA">Maranhão</option>
+								<option value="MT">Mato Grosso</option>
+								<option value="MS">Mato Grosso do Sul</option>
+								<option value="MG">Minas Gerais</option>
+								<option value="PA">Pará</option>
+								<option value="PB">Paraíba</option>
+								<option value="PR">Paraná</option>
+								<option value="PE">Pernambuco</option>
+								<option value="PI">Piauí</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="RN">Rio Grande do Norte</option>
+								<option value="RS">Rio Grande do Sul</option>
+								<option value="RO">Rondônia</option>
+								<option value="RR">Roraima</option>
+								<option value="SC">Santa Catarina</option>
+								<option value="SP">São Paulo</option>
+								<option value="SE">Sergipe</option>
+								<option value="TO">Tocantins</option>
+							</select>
+						
+						<div class="div-form">
+						<i class="fas fa-lock"></i>
+						<input type="password" name="senha" placeholder="Digite Sua Senha">
+						</div>
+
+						<textarea rows="5" cols="50" placeholder="possui algum tipo de enfermidade ?"></textarea>
+
+						<div class="checkBox">
+							<input type="checkbox" name="concodo">
+							<label>Concorda com os termos de cadastro ?</label>
+						</div>
+						<div class="checkBox">
+							<input type="checkbox" name="informação">
+							<label>Deseja receber informações pelo email ?</label>
+							
+						</div>
+
+						
+							<div class="btnDiv">
+							<input class="btn" type="submit" name="enviar" value="Cadastrar" onclick="msg()">
+							<a href="login.html"><input class="btn" type="button" name="voltar" value="Voltar"></a>
+							</div>
+				</form>
+		</div>
+		
+
+	<footer class="rodape">
+		<div class="logoRodape">
+			<img src="imagens/logo3.png">
+		</div>
+		<div class="contato">
+			<center><h2>Contato</h2></center><br>
+			<p><strong>E-mail:</strong> clinicasanberto@sanberto.com.br</p><br>
+			<p><strong>Telefone: </strong>(21) 2651-9878 / (21) 3652-9968</p>
+		</div>
+		<div class="endereco">
+			<center><h2>Endereço</h2></center><br>
+			<center><p>Rua Zoãsnskeberg Jorge Nilton, 22</p></center><br>
+			<p>Cep: 25857-580 / São João de Meriti</p>
+		</div>
+		<div class="redeSocialIndex">
+			<center><h2>Siga-nos</h2></center><br>
+			<a href="https://www.instagram.com/sanberto28/" target="_blank"> <img class="socialIndex" src="imagens/instagram.png"></a>
+			<img class="socialIndex" src="imagens/facebook.png">
+			<a href="https://api.whatsapp.com/send/?phone=552126519878&text=Gostaria+de+saber+mais+sobre+a+cl%C3%ADnica+San%27Berto.&app_absent=0" target="_blank"><img class="socialIndex" src="imagens/whatsapp.png"></a>
+		</div>
+
+
+	</footer>
+	<div id="menu-bg" class="menu-bg"></div>
+	<script src="js/script.js"></script>
+	<script src="js/cadastro.js"></script>
+</body>
+</html>

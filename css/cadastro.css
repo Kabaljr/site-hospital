@@ -1,0 +1,230 @@
+body, html{
+	height: 100%;
+	width: 100%;
+
+}
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+}
+
+.rodapeIndex{
+	background: linear-gradient(250deg, #2d67a9 53%, #9acade 100%);
+	width: 100%;
+	height: 150px;
+	color: #fff;
+	font-weight: bolder;
+	position: relative;
+	bottom: 0;
+}
+
+.logoRodapeIndex{
+	position: relative;
+
+}
+.logoRodapeIndex img{
+	width: 70%;
+	height: 70%;
+
+}
+.contatoIndex{
+	position: relative;
+
+}
+
+.enderecoIndex{
+	position: relative;
+
+}
+.redeSocialIndex{
+	position: relative;
+
+
+}
+.socialIndex{
+	width: 50px;
+	width: 50px;
+	padding: 10px;
+}
+.cadastro-corpo{
+
+	height: 1050px;
+	background: url("../imagens/fundo-cadastro3.jpg") no-repeat center center;
+	background-size: cover;
+
+}
+.checkBox{
+	margin: 5px;
+}
+label{
+
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+
+}
+textarea{
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50px;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 17px;
+	color: #333;
+	margin: 10px 0 5px 0;
+}
+textarea::placeholder{
+	color: #acacac;
+	
+}
+select{
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	max-width: 388px;
+	width: 100%;
+	border-radius: 50px;
+	height: 30px;
+	outline: none;
+	border: none;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 17px;
+	color: #333;
+
+}
+.data2{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0;
+}
+.data{
+	border-radius: 50px;
+	width: 200px;
+	margin: 5px 0;
+	text-align: center;
+
+
+}
+.radio{
+	position: relative;
+	display: flex;
+	margin: 5px 10px;
+	right: 5px;
+
+
+	
+}
+form{ /*Estilizando o Form*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 80px;
+	overflow: hidden;
+	grid-column: 1 / 2; /* começa na coluna 1 e se espalha por 2 colunas*/
+	grid-row: 1 / 2;	/* começa na linha 1 e se espalha por 2 linhas*/
+	transition: 0.2s 0.7s ease-in-out;
+}
+.title{ /*Estilizando o Titlo*/
+	font-size: 36px;
+	color: #fff;
+	margin: 20px 0px;
+}
+
+.div-form{ /*Estilizando a div de entrada de dados do formulario login*/
+
+	max-width: 380px;
+	width: 100%;
+	height: 30px;
+	background: #f0f0f0;
+	margin: 10px 0;
+	border-radius: 55px;
+	display: grid;
+	grid-template-columns: 15% 85%; /* colocando os input de acordo com a largura totalizando 100%*/
+	padding: 0  7px;
+}
+.div-form i{ /* estilizando a Tag i  da Div dos icones das redes socias*/
+	text-align: center;
+	line-height: 30px;
+	color: #acacac;
+	font-size: 18px;
+}
+.div-form input{ /*Estilizando o input da Div entrada de dados do formulario login*/
+	background: none;
+	outline: none;
+	border: none;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 17px;
+	color: #333;
+}
+.div-form input::placeholder{ /*Estilizando o placeholder do input da Div 
+									entrada de dados do formulario login*/
+	color: #aaa;
+	font-weight: 500;
+}
+.btn{ /*Estilizando o botao*/
+	width: 150px;
+	height: 49px;
+	border: none;
+	outline: none;
+	border-radius: 49px;
+	cursor: pointer;
+	background: #fff;
+	color: #5995fd;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0;
+	transition: 0.5s ease;
+	margin: 20px 10px;
+}
+.btn:hover{ /*hover, quando passa o mouse por cima do elemento*/
+	background: #8ba3c7;
+}
+.btnDiv{
+	display: flex;
+
+}
+
+.div-form2{ /*Estilizando a div de entrada de dados do formulario login*/
+
+	max-width: 170px;
+	width: 100%;
+	height: 30px;
+	background: #f0f0f0;
+	margin: 10px 10px;
+	border-radius: 55px;
+	display: grid;
+	grid-template-columns: 15% 85%; /* colocando os input de acordo com a largura totalizando 100%*/
+	padding: 0  7px;
+
+}
+.div-form2 i{ /* estilizando a Tag i  da Div dos icones das redes socias*/
+	text-align: center;
+	line-height: 30px;
+	color: #acacac;
+	font-size: 18px;
+}
+.div-form2 input{ /*Estilizando o input da Div entrada de dados do formulario login*/
+	background: none;
+	outline: none;
+	border: none;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 17px;
+	color: #333;
+}
+.div-form2 input::placeholder{ /*Estilizando o placeholder do input da Div 
+									entrada de dados do formulario login*/
+	color: #aaa;
+	font-weight: 500;
+}
+.num-comp{
+	display: flex;
+}

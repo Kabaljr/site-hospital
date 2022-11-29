@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body, input{
+	font-family: 'Poppins', sans-serif;
+}
+.logo{
+	position: absolute;
+	z-index: 30;
+	right: 5%;
+
+}
+
+.changeLogo{
+	position: absolute;
+	z-index: 30;
+	transform: translate(-490%);
+	transition: 1.8s ease-in-out;
+}
+.changeLogoLogin{
+	position: absolute;
+	z-index: 30;
+	transform: translate(0%, 0%);
+	transition: 1.8s ease-in-out;
+}
+
+.container{ /*Estilizando o container geral*/
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #9acade;
+	overflow: hidden; /*nenhuma barra de rolagem vai ser exibida */
+}
+
+.container:before{ /*Pseudo elemento no container*/
+	content: "";
+	position: absolute;
+	width: 2000px;
+	height: 2000px;
+	border-radius: 50%;
+	background: linear-gradient(-45deg, #004186, #9acade);
+	top: -10%;
+	right: 48%;
+	transform: translateY(-50%);
+	z-index: 6;
+	transition: 1.8s ease-in-out;
+}
+.forms-container{ /* Estilizando o a Div do formulario*/
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.signin-signup{
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	display: grid;
+	grid-template-columns: 1fr;
+	z-index: 5;
+	transition: 1s 0.7s ease ease-in-out;
+}
+form{ /*Estilizando o Form*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 80px;
+	overflow: hidden;
+	grid-column: 1 / 2; /* começa na coluna 1 e se espalha por 2 colunas*/
+	grid-row: 1 / 2;	/* começa na linha 1 e se espalha por 2 linhas*/
+	transition: 0.2s 0.7s ease-in-out;
+}
+form.sign-in-form{
+	z-index: 2;
+}
+form.sign-up-form{
+	z-index: 1;
+	opacity: 0;
+}
+.title{ /*Estilizando o Titlo*/
+	font-size: 28px;
+	color: #444;
+	margin-bottom: 10px;
+}
+.input-field{ /*Estilizando a div de entrada de dados do formulario login*/
+	max-width: 380px;
+	width: 100%;
+	height: 55px;
+	background: #f0f0f0;
+	margin: 10px 0;
+	border-radius: 55px;
+	display: grid;
+	grid-template-columns: 15% 85%; /* colocando os input de acordo com a largura totalizando 100%*/
+	padding: 0  7px;
+}
+.input-field i{ /* estilizando a Tag i  da Div dos icones das redes socias*/
+	text-align: center;
+	line-height: 55px;
+	color: #acacac;
+	font-size: 18px;
+}
+.input-field input{ /*Estilizando o input da Div entrada de dados do formulario login*/
+	background: none;
+	outline: none;
+	border: none;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 17px;
+	color: #333;
+}
+.input-field input::placeholder{ /*Estilizando o placeholder do input da Div 
+									entrada de dados do formulario login*/
+	color: #aaa;
+	font-weight: 500;
+}
+.btn{ /*Estilizando o botao*/
+	width: 150px;
+	height: 49px;
+	border: none;
+	outline: none;
+	border-radius: 49px;
+	cursor: pointer;
+	background: #5995fd;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0;
+	transition: 0.5s ease;
+}
+.btn:hover{ /*hover, quando passa o mouse por cima do elemento*/
+	background: #8ba3c7;
+}
+.social-text{ /*Estilizando o texto de entrar com as redes sociais*/
+	padding: 11px 0;
+	font-size: 16px;
+}
+.social-media{ /*centralizando os icones de redes socias*/
+	display: flex;
+	justify-content: center;
+}
+.social-icon{ /* Estilizando e centralizando dentro da tag a*/
+	width: 46px;
+	height: 46px;
+	border: 1px solid #333;
+	margin: 0 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #333;
+	font-size: 17px;
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+.social-icon:hover{ /*Estilizando o Hover dos icones sociais*/
+	color: #4481eb;
+	border-color: #4481eb;
+	background: #fff;
+}
+
+.panels-container{ /* Estilizando o Div container das animações*/
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.panel{ /*Estilizando as div right e left*/
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	text-align: center;
+	z-index: 7; /*trazer o painel por cimna do conteiner*/
+}
+.left-panel{
+	pointer-events: all; /* elemento apenas pode ser alvo do evento do mouse quando o ponteiro estiver sobre o interior*/
+	padding: 48px 17% 32px 12%;
+}
+
+.right-panel{
+	pointer-events: none; /*O elemento nunca é o alvo de eventos do mouse*/
+	padding: 48px 12% 32px 17%;
+}
+
+.panel .content{
+	color: #fff;
+	transition: 0.9s 0.6s ease-in-out;
+}
+.panel h3{
+	font-weight: 600;
+	line-height: 1;
+	font-size: 24px;
+}
+.panel p{
+	font-size: 15px;
+	padding: 11px 0;
+}
+.btn.transparent{
+	margin: 0;
+	background: none;
+	border: 2px solid #fff;
+	width: 130px;
+	height: 41px;
+	font-weight: 600;
+	font-size: 13px;
+	transition: 0.3s ease;
+}
+.btn.transparent:hover{
+	background: #fff;
+	color: #4481eb;
+
+}
+.image{ /*Estilizando as imagens*/
+	width: 100%;
+	transition: 1.1s 0.4s ease-in-out;
+}
+
+.right-panel .content, .right-panel .image{ /*Levou todo conteudo pra direita*/
+	transform: translateX(800px);
+}
+
+/*Animação*/
+
+
+.container.sign-up-mode:before{ /*Ao clicar no cadastrar o Pseudo elemento vai pra direita cubrtindo 52%*/
+	transform: translate(100%, -50%);
+	right: 52%;
+}
+
+.container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .content{
+	transform: translateX(-800px);
+}
+
+.container.sign-up-mode .right-panel .content,
+.container.sign-up-mode .right-panel .image { /*Levou todo conteudo pra direita*/
+	transform: translateX(0px);
+}
+
+.container.sign-up-mode .left-panel{ /*quando container receber a classe sign-up-mode, a classe left-panel vai receber none*/
+	pointer-events: none;
+}
+.container.sign-up-mode .right-panel{ /*quando container receber a classe sign-up-mode, a classe right-panel vai receber all*/
+	pointer-events: all;
+}
+.container.sign-up-mode .signin-signup{ /*quando container receber a classe sign-up-mode, a classe sigin-signup vai receber left 25%*/
+	left: 25%;
+}
+.container.sign-up-mode form.sign-in-form{
+	z-index: 1;
+	opacity: 0;
+}
+.container.sign-up-mode form.sign-up-form{
+	z-index: 2;
+	opacity: 1;
+}
+
+@media (max-width: 1280px){
+	.changeLogo{
+	position: absolute;
+	z-index: 30;
+	transform: translate(-360%);
+	transition: 1.8s ease-in-out;
+}
+.changeLogoLogin{
+	position: absolute;
+	z-index: 30;
+	transform: translate(0%, 0%);
+	transition: 1.8s ease-in-out;
+}
+}
+@media (max-width: 800px){
+	.changeLogo{
+	position: absolute;
+	z-index: 30;
+	transform: translate(-180%);
+	transition: 1.8s ease-in-out;
+}
+.changeLogoLogin{
+	position: absolute;
+	z-index: 30;
+	transform: translate(0%, 0%);
+	transition: 1.8s ease-in-out;
+}
+}
